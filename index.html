@@ -18,6 +18,7 @@
         <div class="card-header">
           <h2>Generate a Password with me!</h2>
         </div>
+        <!-- defines the textarea where the password will be shown -->
         <div class="card-body password-display" >
           <textarea
           readonly 
@@ -26,16 +27,17 @@
           aria-label="Generated Password"
          class="card-body password" 
         ></textarea>
-          
         </div>
 
         <form id="passwordGeneratorForm" class="form">
           <label for="characterAmountNumber">Number Of Characters</label>
+          <!-- sets the range for character amount and slider-->
           <div class="character-amount-container">
             <input type="range" min="8" max="128" value="10" id="characterAmountRange">
             <input class="number-input" type="number" min="8" max="128" value="10" id="characterAmountNumber">
           </div>
-    
+          
+          <!-- makes checkboxes for the properties of the password -->
           <label for="includeUppercase">Include Uppercase</label>
           <input type="checkbox" id="includeUppercase">
     
@@ -44,7 +46,8 @@
     
           <label for="includeSymbols">Include Symbols</label>
           <input type="checkbox" id="includeSymbols">
-    
+          
+          <!-- makese the button a submit type-->
           <button type="submit" class="btn">Generate Password</button>
         </form>
          
@@ -54,6 +57,7 @@
 
     </div>
 
+    <!-- links the js file --->
     <script src="script.js"></script>
   </body>
 
